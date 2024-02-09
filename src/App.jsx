@@ -3,18 +3,18 @@ import { useState } from 'react';
 import { Button, Stack } from '@mui/material'
 
 function App() {
-  let grey= '#808080'
-  const [bgcolor, setBgColor] = useState(grey)
+  let black= '#000000'
+  const [bgcolor, setBgColor] = useState(black)
 
   const ChangeRed = () => {
     let red = '#FF0000'
     setBgColor(red)
+
   }
 
   const ChangeBlue = () => {
     let blue = '#0000FF'
     setBgColor(blue)
-
 
   }
   const ChangeGreen = () => {
@@ -37,10 +37,10 @@ function App() {
         </div>
         <div className="BtnDiv text-center ">
           <Stack direction="row" spacing={2} className=' justify-content-center'>
-            <Button variant="contained" onClick={ChangeRed} style={{borderRadius:'20px'}}> RED</Button>
-            <Button variant="contained" onClick={ChangeBlue} style={{borderRadius:'20px'}}>BLUE</Button>
-            <Button variant="contained" onClick={ChangeGreen}style={{borderRadius:'20px'}}>GREEN</Button>
-            <Button variant="contained" onClick={ChangePurple}style={{borderRadius:'20px'}}>PURPLE</Button>
+            <Button   variant="contained" onClick={ChangeRed} style={{borderRadius:'20px',background:'red'}}> RED</Button>
+            <Button  variant="contained" onClick={ChangeBlue} style={{borderRadius:'20px'}}>BLUE</Button>
+            <Button variant="contained" onClick={ChangeGreen}style={{borderRadius:'20px',background:'green'}}>GREEN</Button>
+            <Button variant="contained" onClick={ChangePurple}style={{borderRadius:'20px',background:'purple'}}>PURPLE</Button>
 
           </Stack>
 
